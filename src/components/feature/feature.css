@@ -1,0 +1,23 @@
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 5px;
+  margin-top: 80px;
+}
+.feature h1 {
+  flex: 1;
+  font-size: 40px;
+  font-weight: 500;
+}
+.feature h1 span {
+  color: #1f2937;
+  font-weight: 600;
+}
+.feature p {
+  flex: 1;
+  text-align: justify;
+  color: rgb(78, 76, 76);
+}
