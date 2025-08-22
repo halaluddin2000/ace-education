@@ -13,10 +13,12 @@ function App() {
       <Hero />
       <div className="container">
         <Feature />
-        <div className="bg-[#dce0e8]">
-          {/* <Title subtile="Our" title="What We Offer" /> */}
-          <ExploreCountries />
-        </div>
+      </div>
+      <div className="container bg-[#dce0e8]">
+        {/* <Title subtile="Our" title="What We Offer" /> */}
+        <ExploreCountries />
+      </div>
+      <div className="container">
         <About />
         <Testimonials />
         <Contact />

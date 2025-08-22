@@ -3,15 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin-top: 120px;
+  width: 100%;
+  margin-top: 160px;
 }
 .about-left {
   flex-basis: 35%;
   position: relative;
 }
 .about-right {
-  flex-basis: 50%;
+  flex-basis: 45%;
   text-align: justify;
 }
 .about-right h3 {
