@@ -7,7 +7,7 @@ import "./ExploreCountries.css";
 
 function ExploreCountries() {
   return (
-    <div className="container">
+    <div className="explore container">
       <div className="explore-text">
         <h2>Explore Your STUDY ABROAD OPTIONS</h2>
         {/* <svg

@@ -1,4 +1,5 @@
 import Feature from "./components/feature/Feature";
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/pages/About/About";
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Testimonials />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

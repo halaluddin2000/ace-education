@@ -6,6 +6,7 @@ import location_icon from "../../../assets/location.png";
 import msg_icon from "../../../assets/msg-icon.png";
 import arrow from "../../../assets/arrow-1.png";
 import { useState } from "react";
+
 function Contact() {
   const [result, setResult] = useState("");
 
@@ -14,21 +15,22 @@ function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "32462b91-6e45-4042-bb64-f9d2a4d588e7");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
-    });
+    }).then((res) => res.json());
 
-    const data = await response.json();
+    // const data = await response.json();
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
+    if (res.success) {
+      console.log("success", res);
+      setResult(res.massage);
       event.target.reset();
     } else {
-      console.log("Error", data);
-      setResult(data.message);
+      console.log("Error", res);
+      setResult(res.message);
     }
   };
 
