@@ -1,5 +1,6 @@
 import "./About.css";
 import aboutImg from "../../../assets/about-1.jpg";
+// import { motion } from "motion/react";
 
 function About() {
   return (
@@ -36,7 +37,12 @@ function About() {
       </div>
       <div className="about-left">
         <img className="about-img" src={aboutImg} alt="" />
-        <div className="experiences">
+        <div
+          className="experiences"
+          // initial={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 70 }}
+          // transition={{ type: "spring", stiffness: 80, delay: 0.5 }}
+        >
           <h2>
             <span>16</span>+ <br /> YEARS OF EXPERIENCES
           </h2>

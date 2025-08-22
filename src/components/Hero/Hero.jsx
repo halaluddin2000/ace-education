@@ -1,5 +1,5 @@
 import "./hero.css";
-import dark_arrow from "../../assets/arrow.jpg";
+import dark_arrow from "../../assets/arrow-1.png";
 import { motion } from "motion/react";
 
 function Hero() {
@@ -18,7 +18,8 @@ function Hero() {
           field of education
         </p>
         <button className="btn">
-          Explore more <img src={dark_arrow} alt="" />
+          <i className="fa-solid fa-arrow-right"></i>
+          Explore more <img className="dark_arrow" src={dark_arrow} alt="" />
         </button>
       </motion.div>
     </div>
