@@ -19,8 +19,8 @@ function ExploreCountries() {
         </div>
         <motion.div
           className="countries"
-          initial={{ opacity: 0, x: 80 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", delay: 0.2 }}
           viewport={{ once: false, amount: 0.2 }}
         >

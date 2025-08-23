@@ -12,19 +12,48 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <div className="container">
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <div className="container" id="feature">
         <Title subTitle="Feature" title="We help to get Consultation!" />
         <Feature />
       </div>
-      <ExploreCountries />
-      <div className="container">
+
+      <section id="explore">
+        <ExploreCountries />
+      </section>
+
+      <div className="container" id="about">
         <About />
+      </div>
+
+      <div className="container" id="testimonials">
         <Testimonials />
+      </div>
+
+      <div className="container" id="contact">
         <Contact />
         <Footer />
       </div>
     </div>
+
+    // <div>
+    //   <Navbar />
+    //   <Hero />
+    //   <div className="container">
+    //     <Title subTitle="Feature" title="We help to get Consultation!" />
+    //     <Feature />
+    //   </div>
+    //   <ExploreCountries />
+    //   <div className="container">
+    //     <About />
+    //     <Testimonials />
+    //     <Contact />
+    //     <Footer />
+    //   </div>
+    // </div>
   );
 }
 

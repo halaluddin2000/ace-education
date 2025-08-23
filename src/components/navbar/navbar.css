@@ -1,6 +1,5 @@
 nav {
   width: 100%;
-  /* background: #9a8471; */
   background: linear-gradient(90deg, #f5f0f0, #3e537a);
   color: #fff;
   padding: 4px 0;
@@ -11,45 +10,76 @@ nav {
   align-items: center;
   justify-content: space-between;
   z-index: 10;
+  transition: 0.3s;
 }
+
 .logo {
   width: 180px;
 }
+
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
 }
+
+nav ul li a {
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Hover effect */
+}
+
 .nav-btn {
-  /* color: #fff; */
   padding: 10px 18px;
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
-  border: 0;
-  outline: 0;
+  border: none;
+  outline: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-}
-a {
-  color: inherit;
-  line-height: 1;
-  cursor: pointer;
+  color: #212ea0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.dark-nav {
-  background: linear-gradient(90deg, #f5f0f0, #d7abab, #505f7b, #3e537a);
-  transition: 0.5s;
-  /* background-color: w; */
+.nav-btn:hover {
+  background-color: #212ea0;
+  color: #fff;
 }
+
+/* Active link style */
+.active {
+  color: #2c5777;
+  font-weight: bold;
+  border-bottom: 2px solid #2c5777;
+  padding-bottom: 2px;
+}
+
+/* Active button style */
+.active-btn .nav-btn {
+  background-color: #2c5777;
+  color: #fff;
+}
+
+/* Dark Nav when scrolling */
+.dark-nav {
+  background: linear-gradient(90deg, #f5f0f0, #3e537a);
+  /* background: linear-gradient(90deg, #f5f0f0, #d7abab); */
+  transition: 0.5s;
+}
+
+/* Mobile menu */
 .menu-icon {
   display: none;
 }
 
-/* ------media query --------*/
 @media (max-width: 1000px) {
   .logo {
     width: 140px;
@@ -58,6 +88,7 @@ a {
     margin: 10px 15px;
   }
 }
+
 @media (max-width: 840px) {
   nav {
     padding: 15px 0;
@@ -68,7 +99,6 @@ a {
     right: 0;
     bottom: 0;
     background: #212ea0;
-    z-index: -1;
     width: 200px;
     padding-top: 70px;
     transition: 0.5s;
@@ -82,7 +112,7 @@ a {
     width: 30px;
     cursor: pointer;
   }
-  .mobile-manu-hidden {
+  .mobile-menu-hidden {
     right: -200px;
   }
 }
