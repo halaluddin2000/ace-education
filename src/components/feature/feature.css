@@ -21,3 +21,21 @@
   text-align: justify;
   color: rgb(78, 76, 76);
 }
+
+/* ----------responsive-- */
+@media (max-width: 850px) {
+  .feature h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .feature h1 {
+    font-size: 35px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .feature p {
+    font-size: 14px;
+    margin: 15px auto 30px;
+  }
+}

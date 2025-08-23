@@ -8,8 +8,8 @@ function Hero() {
       <motion.div
         className="hero-text "
         initial={{ opacity: 0, y: 80 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 80, delay: 0.5 }}
+        animate={{ opacity: 1, y: 10 }}
+        transition={{ type: "spring", stiffness: 80, delay: 0.6 }}
       >
         <h1>We Ensure better education for a better world </h1>
         <p>

@@ -36,11 +36,11 @@ function Contact() {
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center ">
         <h2 className="text-2xl">Contact Us</h2>
         <h1 className="text-4xl">Get in Touch</h1>
       </div>
-      <div className="contact">
+      <div className="contact ">
         <div className="contact-col">
           <h3>
             {" "}

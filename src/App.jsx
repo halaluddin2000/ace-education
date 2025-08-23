@@ -15,10 +15,10 @@ function App() {
       <div className="container">
         <Feature />
       </div>
-      <div className="container bg-[#dce0e8]">
-        {/* <Title subtile="Our" title="What We Offer" /> */}
+      <div className="bg-[#dce0e8]">
         <ExploreCountries />
       </div>
+
       <div className="container">
         <About />
         <Testimonials />

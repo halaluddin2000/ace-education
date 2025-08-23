@@ -37,7 +37,7 @@
   border-radius: 10px;
 }
 .experiences {
-  background: #c72027;
+  background: #212ea0;
   width: 50%;
   height: 30%;
   position: absolute;
@@ -57,4 +57,37 @@
 .experiences h2 span {
   font-size: 50px;
   font-weight: 600;
+}
+
+/* ----------responsive--- */
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-left {
+    flex-basis: 80%;
+    margin: 20px;
+    padding: 20px;
+  }
+  .about-right {
+    flex-basis: 80%;
+    /* margin-top: 20px; */
+  }
+  .experiences {
+    width: 40%;
+    height: 20%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .experiences h2 {
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .experiences h2 span {
+    font-size: 40px;
+    font-weight: 600;
+  }
 }

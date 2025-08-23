@@ -51,3 +51,13 @@
   display: block;
   margin: 20px 0;
 }
+
+/* --------responsive-------- */
+@media (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+  .contact-col {
+    padding: 20px;
+  }
+}

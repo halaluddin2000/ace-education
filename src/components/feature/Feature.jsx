@@ -2,7 +2,7 @@ import "./feature.css";
 
 function Feature() {
   return (
-    <div className="feature container">
+    <div className="feature">
       <h1>
         Why we're one of the <span>Best Consultants?</span>
       </h1>
