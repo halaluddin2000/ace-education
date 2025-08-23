@@ -1,16 +1,10 @@
 import "./About.css";
 import aboutImg from "../../../assets/about-1.jpg";
-import { motion } from "motion/react";
 
 function About() {
   return (
     <div className="about">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        className="about-right"
-      >
+      <div className="about-right">
         <h3>ABOUT US</h3>
         <h2>Why should you choose Pro Info & Edu Consultant?</h2>
         <p>
@@ -39,19 +33,14 @@ function About() {
           Uninterrupted Support: Continuous assistance throughout your
           educational journey.
         </li>
-      </motion.div>
+      </div>
       <div className="about-left">
         <img className="about-img" src={aboutImg} alt="" />
-        <motion.div
-          initial={{ opacity: 0, x: 0 }}
-          animate={{ opacity: 1, x: -100, y: 80 }}
-          transition={{ type: "spring", stiffness: 20, delay: 0.5 }}
-          className="experiences"
-        >
+        <div div className="experiences">
           <h2>
             <span>16</span>+ <br /> YEARS OF EXPERIENCES
           </h2>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
