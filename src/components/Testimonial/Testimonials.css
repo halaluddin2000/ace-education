@@ -26,7 +26,7 @@
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
-  background: #212ea0;
+  background: #2c5777;
 }
 .back-btn {
   right: auto;
@@ -58,7 +58,7 @@
   width: 65px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 4px solid #212ea0;
+  border: 4px solid #2c5777;
 }
 .user-info {
   display: flex;
@@ -67,7 +67,7 @@
   font-size: 15px;
 }
 .user-info h3 {
-  color: #212ea0;
+  color: #2c5777;
   font-weight: 600;
 }
 

@@ -1,5 +1,5 @@
 import "./hero.css";
-import dark_arrow from "../../assets/arrow-1.png";
+import dark_arrow from "../../assets/btn-img.png";
 import { motion } from "motion/react";
 
 function Hero() {
@@ -17,7 +17,7 @@ function Hero() {
           knowledge, skills, and experiences needed to excel in the dynamic
           field of education
         </p>
-        <button className="btn">
+        <button className="hero-btn">
           <i className="fa-solid fa-arrow-right"></i>
           Explore more <img className="dark_arrow" src={dark_arrow} alt="" />
         </button>

@@ -15,10 +15,7 @@ function App() {
       <div className="container">
         <Feature />
       </div>
-      <div className="bg-[#dce0e8]">
-        <ExploreCountries />
-      </div>
-
+      <ExploreCountries />
       <div className="container">
         <About />
         <Testimonials />
