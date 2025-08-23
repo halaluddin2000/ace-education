@@ -4,13 +4,17 @@ import uk from "../../../assets/uk.jpg";
 import malaysia from "../../../assets/malaysia.jpg";
 import australia from "../../../assets/australia_1.jpg";
 import "./ExploreCountries.css";
+import Title from "../../Title/Title";
 
 function ExploreCountries() {
   return (
     <div className="explore">
       <div className=" container">
-        <div className="explore-text     ">
-          <h2>Explore Your STUDY ABROAD OPTIONS</h2>
+        <div className="explore-text">
+          <Title
+            subTitle={"Our Destination"}
+            title={"Explore Your STUDY ABROAD OPTIONS"}
+          />
         </div>
         <div className="countries">
           <div className="country">

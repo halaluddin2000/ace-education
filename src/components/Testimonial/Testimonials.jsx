@@ -6,6 +6,7 @@ import user_2 from "../../assets/user-2.jpg";
 import user_3 from "../../assets/user-3.jpg";
 import user_4 from "../../assets/user-4.jpg";
 import { useRef } from "react";
+import Title from "../Title/Title";
 
 function Testimonials() {
   const slider = useRef();
@@ -26,8 +27,7 @@ function Testimonials() {
   return (
     <div className="testimonials">
       <div className="testimonial-title">
-        <h3>TESTIMONIALS</h3>
-        <h2>What Student Says</h2>
+        <Title subTitle="TESTIMONIALS" title={"What Student Says"} />
       </div>
       <img
         onClick={sliderForward}

@@ -6,6 +6,7 @@ import About from "./components/pages/About/About";
 import Contact from "./components/pages/Contact/Contact";
 import ExploreCountries from "./components/pages/Explore Countries/ExploreCountries";
 import Testimonials from "./components/Testimonial/Testimonials";
+import Title from "./components/Title/Title";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <div className="container">
+        <Title subTitle="Feature" title="We help to get Consultation!" />
         <Feature />
       </div>
       <ExploreCountries />

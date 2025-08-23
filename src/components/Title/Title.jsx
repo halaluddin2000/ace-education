@@ -1,8 +1,10 @@
-function Title() {
+import "./TItle.css";
+
+function Title({ subTitle, title }) {
   return (
-    <div>
-      <h2 className="subTitle"></h2>
-      <h1></h1>
+    <div className="title">
+      <p>{subTitle}</p>
+      <h2>{title}</h2>
     </div>
   );
 }

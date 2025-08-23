@@ -6,6 +6,7 @@ import location_icon from "../../../assets/location.png";
 import msg_icon from "../../../assets/msg-icon.png";
 import arrow from "../../../assets/arrow-1.png";
 import { useState } from "react";
+import Title from "../../Title/Title";
 
 function Contact() {
   const [result, setResult] = useState("");
@@ -37,8 +38,7 @@ function Contact() {
   return (
     <>
       <div className="text-center ">
-        <h2 className="text-2xl">Contact Us</h2>
-        <h1 className="text-4xl">Get in Touch</h1>
+        <Title subTitle={"Contact Us"} title={"Get in Touch"} />
       </div>
       <div className="contact ">
         <div className="contact-col">

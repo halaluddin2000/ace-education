@@ -4,18 +4,7 @@
   position: relative;
   margin-top: 120px;
 }
-.testimonial-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.testimonial-title h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-.testimonial-title h2 {
-  font-size: 25px;
-  font-weight: 550;
-}
+
 .next-btn,
 .back-btn {
   position: absolute;
