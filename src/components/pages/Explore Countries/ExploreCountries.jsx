@@ -5,6 +5,7 @@ import malaysia from "../../../assets/malaysia.jpg";
 import australia from "../../../assets/australia_1.jpg";
 import "./ExploreCountries.css";
 import Title from "../../Title/Title";
+import { motion } from "framer-motion";
 
 function ExploreCountries() {
   return (
@@ -16,7 +17,13 @@ function ExploreCountries() {
             title={"Explore Your STUDY ABROAD OPTIONS"}
           />
         </div>
-        <div className="countries">
+        <motion.div
+          className="countries"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", delay: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <div className="country">
             <img src={canada} alt="" />
             <div className="caption">
@@ -61,7 +68,7 @@ function ExploreCountries() {
               <p>Academic excellence, affordability and adventure Malaysia</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
