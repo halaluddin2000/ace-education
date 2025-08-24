@@ -15,7 +15,8 @@ function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    setMobileMenu(!mobileMenu);
+    // setMobileMenu(!mobileMenu);
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
   };
 
   return (

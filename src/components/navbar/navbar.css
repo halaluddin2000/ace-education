@@ -107,12 +107,17 @@ nav ul li a:hover {
     display: block;
     margin: 25px 40px;
   }
+
+  .mobile-menu-hidden {
+    right: -200px;
+  }
   .menu-icon {
     display: block;
     width: 30px;
     cursor: pointer;
   }
-  .mobile-menu-hidden {
-    right: -200px;
+  .menu-icon {
+    position: relative;
+    z-index: 20;
   }
 }
