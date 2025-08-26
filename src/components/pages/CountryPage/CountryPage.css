@@ -1,0 +1,54 @@
+.cover-section {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 50px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+}
+
+.cover-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cover-content p {
+  font-size: 20px;
+}
+
+.universities-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.universities-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.university-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.uni-logo img {
+  max-width: 120px;
+  transition: transform 0.3s;
+}
+
+.uni-logo img:hover {
+  transform: scale(1.1);
+}

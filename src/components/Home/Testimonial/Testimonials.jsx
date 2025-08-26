@@ -1,12 +1,12 @@
 import "./Testimonials.css";
-import next_icon from "../../assets/next_icon.png";
-import back_icon from "../../assets/back_icon.png";
-import user_1 from "../../assets/user-1.jpg";
-import user_2 from "../../assets/user-2.jpg";
-import user_3 from "../../assets/user-3.jpg";
-import user_4 from "../../assets/user-4.jpg";
+import next_icon from "../../../assets/next_icon.png";
+import back_icon from "../../../assets/back_icon.png";
+import user_1 from "../../../assets/user-1.jpg";
+import user_2 from "../../../assets/user-2.jpg";
+import user_3 from "../../../assets/user-3.jpg";
+import user_4 from "../../../assets/user-4.jpg";
 import { useRef } from "react";
-import Title from "../Title/Title";
+import Title from "../../Title/Title";
 
 function Testimonials() {
   const slider = useRef();

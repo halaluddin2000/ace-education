@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  background: linear-gradient(90deg, #f5f0f0, #3e537a);
+  background: linear-gradient(90deg, #fdfbfb, #fdfbfb, #10254e, #10254e);
   color: #fff;
   padding: 4px 0;
   position: fixed;
@@ -14,7 +14,7 @@ nav {
 }
 
 .logo {
-  width: 180px;
+  width: 190px;
 }
 
 nav ul li {
@@ -29,10 +29,10 @@ nav ul li a {
   cursor: pointer;
   transition: color 0.3s;
 }
-
-nav ul li a:hover {
-  color: #ffcc00; /* Hover effect */
-}
+/* Hover effect */
+/* nav ul li a:hover {
+  color: #ffcc00; 
+} */
 
 .nav-btn {
   padding: 10px 18px;
@@ -44,13 +44,13 @@ nav ul li a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  color: #212ea0;
+  background-color: #ef8720;
+  color: #fff;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-btn:hover {
-  background-color: #212ea0;
+  background-color: #ef8720;
   color: #fff;
 }
 
@@ -73,6 +73,52 @@ nav ul li a:hover {
   background: linear-gradient(90deg, #f5f0f0, #3e537a);
   /* background: linear-gradient(90deg, #f5f0f0, #d7abab); */
   transition: 0.5s;
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-title {
+  color: inherit;
+  font-size: 16px;
+  transition: color 0.3s;
+  /* user-select: none; */
+}
+
+.dropdown-title:hover {
+  color: #ef8720;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 6px;
+  padding: 8px 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background: #f4f4f4;
+  color: #ef8720;
 }
 
 /* Mobile menu */
@@ -119,5 +165,22 @@ nav ul li a:hover {
   .menu-icon {
     position: relative;
     z-index: 20;
+  }
+  @media (max-width: 840px) {
+    .dropdown-menu {
+      position: relative;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    .dropdown-menu li a {
+      padding: 8px 12px;
+      color: #fff;
+    }
+
+    .dropdown-menu li a:hover {
+      background: none;
+      color: #ef8720;
+    }
   }
 }

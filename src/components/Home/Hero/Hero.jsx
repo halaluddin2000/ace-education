@@ -1,5 +1,5 @@
 import "./hero.css";
-import dark_arrow from "../../assets/btn-img.png";
+import dark_arrow from "../../../assets/btn-img.png";
 import { motion } from "motion/react";
 
 function Hero() {

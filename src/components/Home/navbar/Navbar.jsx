@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import logo from "../../assets/final_logo_2.png";
-import menu_icon from "../../assets/manu-icon.png";
+import logo from "../../../assets/final_logo_2.png";
+import menu_icon from "../../../assets/manu-icon.png";
 import "./navbar.css";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [dropdown, setDropdown] = useState(false);
   const [sticky, setSticky] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -15,8 +16,11 @@ function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    // setMobileMenu(!mobileMenu);
-    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+    setMobileMenu(!mobileMenu);
+  };
+
+  const toggleDropdown = () => {
+    setDropdown(!dropdown);
   };
 
   return (
@@ -27,7 +31,6 @@ function Navbar() {
           <Link
             to="hero"
             smooth={true}
-            offset={0}
             duration={500}
             spy={true}
             activeClass="active"
@@ -47,18 +50,43 @@ function Navbar() {
             Feature
           </Link>
         </li>
-        <li>
-          <Link
-            to="explore"
-            smooth={true}
-            offset={-150}
-            duration={500}
-            spy={true}
-            activeClass="active"
-          >
-            Explore Countries
-          </Link>
+
+        {/* 🔽 Dropdown */}
+        <li className="dropdown">
+          <span className="dropdown-title" onClick={toggleDropdown}>
+            Study Abroad ▾
+          </span>
+          {dropdown && (
+            <ul className="dropdown-menu">
+              <li>
+                <Link to="/canada" onClick={() => setDropdown(false)}>
+                  Canada
+                </Link>
+              </li>
+              <li>
+                <Link to="/usa" onClick={() => setDropdown(false)}>
+                  USA
+                </Link>
+              </li>
+              <li>
+                <Link to="/uk" onClick={() => setDropdown(false)}>
+                  UK
+                </Link>
+              </li>
+              <li>
+                <Link to="/australia" onClick={() => setDropdown(false)}>
+                  Australia
+                </Link>
+              </li>
+              <li>
+                <Link to="/malaysia" onClick={() => setDropdown(false)}>
+                  Malaysia
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
+
         <li>
           <Link
             to="about"
@@ -96,6 +124,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+
       <img
         src={menu_icon}
         alt="Menu"

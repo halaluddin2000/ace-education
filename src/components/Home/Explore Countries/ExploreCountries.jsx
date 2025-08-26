@@ -6,11 +6,12 @@ import australia from "../../../assets/australia_1.jpg";
 import "./ExploreCountries.css";
 import Title from "../../Title/Title";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function ExploreCountries() {
   return (
     <div className="explore">
-      <div className=" container">
+      <div className="container">
         <div className="explore-text">
           <Title
             subTitle={"Our Destination"}
@@ -29,8 +30,12 @@ function ExploreCountries() {
             <div className="caption">
               <h2>Study in Canada</h2>
               <p>Academic excellence, affordability and adventure – Canada.</p>
+              <Link to="/canada">
+                <button>Details</button>
+              </Link>
             </div>
           </div>
+
           <div className="country">
             <img src={usa} alt="" />
             <div className="caption">
@@ -39,8 +44,12 @@ function ExploreCountries() {
                 Academic excellence, affordability and adventure USA stands out
                 as an ideal place to study.
               </p>
+              <Link to="/usa">
+                <button>Details</button>
+              </Link>
             </div>
           </div>
+
           <div className="country">
             <img src={uk} alt="" />
             <div className="caption">
@@ -49,8 +58,12 @@ function ExploreCountries() {
                 UK education system is recognized by employers, universities and
                 governments worldwide.
               </p>
+              <Link to="/uk">
+                <button>Details</button>
+              </Link>
             </div>
           </div>
+
           <div className="country">
             <img src={australia} alt="" />
             <div className="caption">
@@ -59,13 +72,20 @@ function ExploreCountries() {
                 Australia is a popular destination for international students
                 from around the world.
               </p>
+              <Link to="/australia">
+                <button>Details</button>
+              </Link>
             </div>
           </div>
+
           <div className="country">
             <img src={malaysia} alt="" />
             <div className="caption">
-              <h2>Study in malaysia</h2>
+              <h2>Study in Malaysia</h2>
               <p>Academic excellence, affordability and adventure Malaysia</p>
+              <Link to="/malaysia">
+                <button>Details</button>
+              </Link>
             </div>
           </div>
         </motion.div>
