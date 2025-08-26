@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import logo from "../../../assets/final_logo_2.png";
 import menu_icon from "../../../assets/manu-icon.png";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [sticky, setSticky] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,35 +26,42 @@ function Navbar() {
     setDropdown(!dropdown);
   };
 
+  // ✅ Handle scroll for Home/About/etc.
+  const handleScrollTo = (id) => {
+    if (window.location.pathname !== "/") {
+      // অন্য page এ আছো → আগে home এ পাঠাও
+      navigate("/");
+
+      // ছোট delay দিয়ে scroll করাও (home load হওয়ার পর)
+      setTimeout(() => {
+        scroller.scrollTo(id, {
+          smooth: true,
+          duration: 500,
+          offset: -80,
+        });
+      }, 100);
+    } else {
+      // ইতিমধ্যেই home page এ আছো → সরাসরি scroll
+      scroller.scrollTo(id, {
+        smooth: true,
+        duration: 500,
+        offset: -80,
+      });
+    }
+  };
+
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} className="logo" alt="Logo" />
-      <ul className={mobileMenu ? "" : "mobile-menu-hidden"}>
-        <li>
-          <Link
-            to="hero"
-            smooth={true}
-            duration={500}
-            spy={true}
-            activeClass="active"
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="feature"
-            smooth={true}
-            offset={-80}
-            duration={500}
-            spy={true}
-            activeClass="active"
-          >
-            Feature
-          </Link>
-        </li>
 
-        {/* 🔽 Dropdown */}
+      <ul className={mobileMenu ? "" : "mobile-menu-hidden"}>
+        {/*  Home scrolls to Hero */}
+        <li onClick={() => handleScrollTo("hero")}>Home</li>
+
+        {/*  Feature scroll */}
+        <li onClick={() => handleScrollTo("feature")}>Feature</li>
+
+        {/* Dropdown = real routes */}
         <li className="dropdown">
           <span className="dropdown-title" onClick={toggleDropdown}>
             Study Abroad ▾
@@ -59,69 +69,43 @@ function Navbar() {
           {dropdown && (
             <ul className="dropdown-menu">
               <li>
-                <Link to="/canada" onClick={() => setDropdown(false)}>
+                <RouterLink to="/canada" onClick={() => setDropdown(false)}>
                   Canada
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/usa" onClick={() => setDropdown(false)}>
+                <RouterLink to="/usa" onClick={() => setDropdown(false)}>
                   USA
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/uk" onClick={() => setDropdown(false)}>
+                <RouterLink to="/uk" onClick={() => setDropdown(false)}>
                   UK
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/australia" onClick={() => setDropdown(false)}>
+                <RouterLink to="/australia" onClick={() => setDropdown(false)}>
                   Australia
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link to="/malaysia" onClick={() => setDropdown(false)}>
+                <RouterLink to="/malaysia" onClick={() => setDropdown(false)}>
                   Malaysia
-                </Link>
+                </RouterLink>
               </li>
             </ul>
           )}
         </li>
 
-        <li>
-          <Link
-            to="about"
-            smooth={true}
-            offset={-180}
-            duration={500}
-            spy={true}
-            activeClass="active"
-          >
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="testimonials"
-            smooth={true}
-            offset={-160}
-            duration={500}
-            spy={true}
-            activeClass="active"
-          >
-            Testimonials
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-160}
-            duration={500}
-            spy={true}
-            activeClass="active-btn"
-          >
-            <button className="nav-btn">Contact Us</button>
-          </Link>
+        {/* ✅ About scroll */}
+        <li onClick={() => handleScrollTo("about")}>About Us</li>
+
+        {/* ✅ Testimonials scroll */}
+        <li onClick={() => handleScrollTo("testimonials")}>Success Students</li>
+
+        {/* ✅ Contact scroll */}
+        <li onClick={() => handleScrollTo("contact")}>
+          <button className="nav-btn">Contact Us</button>
         </li>
       </ul>
 

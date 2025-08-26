@@ -18,6 +18,7 @@
   color: #ef8720;
   font-size: 20px;
   font-weight: 500;
+  text-align: start;
 }
 .about-right h2 {
   margin-top: 5px;
@@ -37,10 +38,11 @@
   border-radius: 10px;
 }
 .experiences {
-  background: #2c5777;
+  background: #ef8720;
   width: 50%;
   height: 30%;
   position: absolute;
+  border-radius: 20%;
   bottom: 50%;
   right: 50%;
   transform: translate(-50%, 50%);
@@ -50,7 +52,7 @@
   align-items: center;
   text-align: center;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
 }

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 function Hero() {
   return (
-    <div className="hero container">
+    <div className="hero container" id="hero">
       <motion.div
         className="hero-text "
         initial={{ opacity: 0, y: 80 }}

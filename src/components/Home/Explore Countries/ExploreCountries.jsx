@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function ExploreCountries() {
   return (
-    <div className="explore">
+    <div className="explore" id="explore">
       <div className="container">
         <div className="explore-text">
           <Title

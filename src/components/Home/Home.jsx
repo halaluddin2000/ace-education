@@ -11,18 +11,18 @@ import Testimonials from "./Testimonial/Testimonials";
 function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <div className="container">
         <Title subTitle="Feature" title="We help to get Consultation!" />
         <Feature />
       </div>
       <ExploreCountries />
-
       <div className="container">
         <About />
         <Testimonials />
         <Contact />
+      </div>
+      <div>
         <Footer />
       </div>
     </div>

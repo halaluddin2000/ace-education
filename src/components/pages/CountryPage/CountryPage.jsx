@@ -17,7 +17,8 @@ const CountryPage = ({ coverImage, title, subtitle, universities }) => {
 
       {/* Universities Section */}
       <div className="universities-section">
-        <h2>The Universities We Facilitate Below</h2>
+        <h2>Explore Our Partner Universities</h2>
+        <p>Leading institutions where your future begins.</p>
         <div className="university-logos">
           {universities?.map((logo, idx) => (
             <div key={idx} className="uni-logo">

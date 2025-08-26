@@ -1,6 +1,15 @@
 nav {
   width: 100%;
-  background: linear-gradient(90deg, #fdfbfb, #fdfbfb, #10254e, #10254e);
+  /* background: linear-gradient(90deg, #f5f0f0, #2c3e50); */
+  background: linear-gradient(
+    90deg,
+    #f4f4f4,
+    #b3bdc7,
+    #2b467d,
+    #1f396d,
+    #152c5a,
+    #152c5a
+  );
   color: #fff;
   padding: 4px 0;
   position: fixed;
@@ -22,6 +31,7 @@ nav ul li {
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 nav ul li a {

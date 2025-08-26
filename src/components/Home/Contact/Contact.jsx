@@ -4,7 +4,7 @@ import massage from "../../../assets/mas.png";
 import call_icon from "../../../assets/call.png";
 import location_icon from "../../../assets/location.png";
 import msg_icon from "../../../assets/msg-icon.png";
-import arrow from "../../../assets/arrow-1.png";
+// import arrow from "../../../assets/arrow-1.png";
 import { useState } from "react";
 import Title from "../../Title/Title";
 
@@ -36,11 +36,11 @@ function Contact() {
   };
 
   return (
-    <>
+    <div className="contact-section" id="contact">
       <div className="text-center ">
         <Title subTitle={"Contact Us"} title={"Get in Touch"} />
       </div>
-      <div className="contact ">
+      <div className="contact  ">
         <div className="contact-col">
           <h3>
             {" "}
@@ -93,14 +93,15 @@ function Contact() {
               placeholder="enter your message"
               required
             ></textarea>
-            <button type="submit" className="btn dark-btn">
-              Submit Now <img src={arrow} alt="" />
+            <button type="submit" className="contact-btn dark-btn">
+              Submit Now
+              {/* <img src={arrow} alt="" /> */}
             </button>
           </form>
           <span>{result}</span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -33,7 +33,12 @@
 
 .universities-section h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  color: #ef8720;
+}
+.universities-section p {
+  font-size: 18px;
+  margin-bottom: 50px;
 }
 
 .university-logos {
@@ -42,6 +47,7 @@
   gap: 30px;
   justify-items: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .uni-logo img {

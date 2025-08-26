@@ -25,9 +25,9 @@ function Testimonials() {
   };
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <div className="testimonial-title">
-        <Title subTitle="TESTIMONIALS" title={"What Student Says"} />
+        <Title subTitle="Stories of Success" title={"From Our Students"} />
       </div>
       <img
         onClick={sliderForward}

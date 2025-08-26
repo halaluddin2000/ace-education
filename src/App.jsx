@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Home/navbar/Navbar";
-// import Home from "./components/Home/Home";
 import Home from "./components/Home/Home";
 import Canada from "./components/pages/Countries/Canada";
 import Malaysia from "./components/pages/Countries/Malaysia";
