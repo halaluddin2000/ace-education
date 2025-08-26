@@ -4,6 +4,17 @@
 .explore-text Title {
   margin-top: 10px;
 }
+.details-btn {
+  margin-top: 6px;
+  padding: 4px 6px;
+  border: 2px solid #ef8720;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.details-btn:hover {
+  background: #ef8720;
+  color: #fff;
+}
 .countries {
   display: flex;
   flex-wrap: wrap;

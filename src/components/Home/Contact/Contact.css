@@ -69,11 +69,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #ef8720;
   margin-bottom: 20px;
+  color: #fff;
 }
 .contact-btn:hover {
-  border: 2px solid #212ea0;
+  border: 2px solid #fff;
 }
 
 /* --------responsive-------- */

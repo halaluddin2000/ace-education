@@ -37,7 +37,7 @@ function Navbar() {
         scroller.scrollTo(id, {
           smooth: true,
           duration: 500,
-          offset: -80,
+          offset: -150,
         });
       }, 100);
     } else {
@@ -45,7 +45,7 @@ function Navbar() {
       scroller.scrollTo(id, {
         smooth: true,
         duration: 500,
-        offset: -80,
+        offset: -150,
       });
     }
   };

@@ -31,7 +31,7 @@ function ExploreCountries() {
               <h2>Study in Canada</h2>
               <p>Academic excellence, affordability and adventure – Canada.</p>
               <Link to="/canada">
-                <button>Details</button>
+                <button className="details-btn">Details</button>
               </Link>
             </div>
           </div>
@@ -45,7 +45,7 @@ function ExploreCountries() {
                 as an ideal place to study.
               </p>
               <Link to="/usa">
-                <button>Details</button>
+                <button className="details-btn">Details</button>
               </Link>
             </div>
           </div>
@@ -59,7 +59,7 @@ function ExploreCountries() {
                 governments worldwide.
               </p>
               <Link to="/uk">
-                <button>Details</button>
+                <button className="details-btn">Details</button>
               </Link>
             </div>
           </div>
@@ -73,7 +73,7 @@ function ExploreCountries() {
                 from around the world.
               </p>
               <Link to="/australia">
-                <button>Details</button>
+                <button className="details-btn">Details</button>
               </Link>
             </div>
           </div>
@@ -84,7 +84,7 @@ function ExploreCountries() {
               <h2>Study in Malaysia</h2>
               <p>Academic excellence, affordability and adventure Malaysia</p>
               <Link to="/malaysia">
-                <button>Details</button>
+                <button className="details-btn">Details</button>
               </Link>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./CountryPage.css";
+import Footer from "../../Home/Footer/Footer";
 
 const CountryPage = ({ coverImage, title, subtitle, universities }) => {
   return (
@@ -27,6 +28,7 @@ const CountryPage = ({ coverImage, title, subtitle, universities }) => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

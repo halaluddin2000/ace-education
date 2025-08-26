@@ -33,8 +33,20 @@ nav ul li {
   font-size: 16px;
   cursor: pointer;
 }
-
 nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+ul li a.active {
+  border-bottom: 2px solid #ff6600; /* underline color */
+  color: #ff6600; /* optional active color */
+}
+
+ul li a {
   color: inherit;
   cursor: pointer;
   transition: color 0.3s;
